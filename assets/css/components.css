@@ -874,6 +874,9 @@
   display: flex;
 }
 
+/* Un <dialog> cerrado no debe mostrarse (display:flex de arriba lo dejaba visible) */
+.cookie-modal:not([open]) { display: none; }
+
 .cookie-modal::backdrop {
   background: rgba(26, 15, 10, 0.75);
   backdrop-filter: blur(4px);

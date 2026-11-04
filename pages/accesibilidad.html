@@ -3,50 +3,132 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Declaración de Accesibilidad · Corporación Cultural Lucila</title>
-  <link rel="canonical" href="https://corporacionlucila.cl/pages/accesibilidad.html" />
+  <title>Declaración de Accesibilidad · Asociación Cultural de Músicos y Artístas Lucila</title>
+  <meta name="description" content="Declaración de accesibilidad digital de la Asociación Cultural de Músicos y Artistas Lucila, conforme a los estándares WCAG 2.1 nivel AA." />
+  <link rel="canonical" href="https://asociacioncultural-lucila.cl/pages/accesibilidad.html" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <style>
     .legal-page { padding: 120px 0 60px; }
-    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; }
-    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--rojo-corporativo); }
-    .legal-page p, .legal-page li { font-size: 0.9rem; line-height: 1.7; color: var(--gris-texto); margin-bottom: 0.8rem; }
-    .legal-page ul { list-style: disc; padding-left: 1.4rem; }
-    .legal-page a { color: var(--rojo-corporativo); text-decoration: underline; }
+    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; color: var(--ink); }
+    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--red); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .legal-page p, .legal-page li { font-size: 0.95rem; line-height: 1.8; color: #333; margin-bottom: 0.8rem; }
+    .legal-page ul { list-style: disc; padding-left: 1.4rem; margin-bottom: 1.5rem; }
+    .legal-page a { color: var(--red); text-decoration: underline; font-weight: 500; }
+    .legal-meta { font-size: 0.85rem; color: #666; margin-bottom: 2rem; font-style: italic; }
+    .legal-highlight { background: var(--paper); padding: 1.5rem; border-left: 4px solid var(--red); margin: 1.5rem 0; border-radius: 4px; }
+    
+    /* Estilos para el botón de volver (Extraídos del diseño de tu imagen) */
+    .btn-back-custom {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+    .btn-back-custom:hover {
+      background-color: var(--red);
+      color: var(--paper);
+      gap: 15px;
+    }
+    
+    /* Ajuste para que el logo quede a la derecha si es necesario */
+    .navbar__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
-  <header class="navbar"><div class="navbar__inner container"><a href="../index.html" class="navbar__logo"><img src="../assets/img/logo.svg" alt="Corporación Cultural Lucila" height="34" /></a></div></header>
+  <!-- NAVBAR (Con botón de volver a la izquierda) -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      
+      <!-- Botón de volver al inicio (A la izquierda) -->
+      <a href="../index.html" class="btn-back-custom"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+      
+      <!-- Logo (A la derecha) -->
+      <a href="../index.html" class="navbar__logo" aria-label="Asociación Cultural de Músicos y Artistas Lucila — Inicio">
+        <img
+          src="../assets/img/logo-lucila-r.svg"
+          alt="Asociación Cultural de Músicos y Artistas Lucila"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+      </a>
+      
+    </div>
+  </header>
 
   <main class="legal-page">
-    <div class="container">
+    <div class="container" style="max-width: 850px; margin: 0 auto;">
+      
       <h1>Declaración de Accesibilidad</h1>
-      <p>La <strong>Corporación Cultural Lucila</strong> se compromete a garantizar la accesibilidad digital de este sitio conforme a las pautas <strong>WCAG 2.1 nivel AA</strong> del W3C.</p>
+      <p class="legal-meta">Última actualización: 24 de octubre de 2026</p>
 
-      <h2>Medidas implementadas</h2>
+      <div class="legal-highlight">
+        <p style="margin: 0;">La <strong>Asociación Cultural de Músicos y Artistas Lucila</strong> se compromete a garantizar la accesibilidad de su sitio web a todas las personas, en cumplimiento de la <strong>Ley N° 20.422</strong> sobre Igualdad de Oportunidades e Inclusión Social de Personas con Discapacidad, y en línea con los estándares internacionales <strong>WCAG 2.1 Nivel AA</strong> del W3C.</p>
+      </div>
+
+      <h2>1. Estado de Conformidad</h2>
+      <p>Este sitio web es <strong>parcialmente conforme</strong> con las Pautas de Accesibilidad para el Contenido Web (WCAG) 2.1 en el nivel AA. La conformidad parcial se debe a que algunos contenidos alojados en formato PDF o documentos históricos no cuentan aún con una versión accesible.</p>
+
+      <h2>2. Medidas Implementadas</h2>
+      <p>Para garantizar una experiencia inclusiva, hemos implementado las siguientes medidas técnicas y de diseño:</p>
       <ul>
-        <li>Estructura semántica HTML5 (header, nav, main, section, article, footer).</li>
-        <li>Contraste de color verificado (ratio ≥ 4.5:1 en texto normal).</li>
-        <li>Navegación completa por teclado y enlace "Saltar al contenido".</li>
-        <li>Textos alternativos descriptivos en imágenes informativas.</li>
-        <li>Atributos ARIA en componentes interactivos (menú, modales, banners).</li>
-        <li>Respeto a <code>prefers-reduced-motion</code> para usuarios con sensibilidad al movimiento.</li>
-        <li>Formularios con etiquetas asociadas, mensajes de error accesibles y atributos de autocompletado.</li>
+        <li><strong>Estructura semántica:</strong> Uso correcto de etiquetas HTML5 (header, nav, main, article, section, footer) para facilitar la lectura de lectores de pantalla.</li>
+        <li><strong>Navegación por teclado:</strong> Todo el sitio puede ser recorrido utilizando únicamente la tecla Tab y la tecla Enter.</li>
+        <li><strong>Contraste de color:</strong> Relación de contraste verificada (ratio ≥ 4.5:1) entre el texto y el fondo para garantizar la legibilidad.</li>
+        <li><strong>Textos alternativos:</strong> Todas las imágenes informativas cuentan con atributos <code>alt</code> descriptivos.</li>
+        <li><strong>Atributos ARIA:</strong> Implementación de etiquetas WAI-ARIA en componentes interactivos como menús, ventanas modales y banners de cookies.</li>
+        <li><strong>Reducción de movimiento:</strong> El sitio respeta la preferencia del sistema <code>prefers-reduced-motion</code> para usuarios con sensibilidad al movimiento.</li>
+        <li><strong>Formularios accesibles:</strong> Todos los campos de entrada tienen etiquetas asociadas, mensajes de error claros y atributos de autocompletado.</li>
       </ul>
 
-      <h2>Limitaciones conocidas</h2>
-      <p>Algunos documentos PDF alojados (estatutos, memorias) pueden no cumplir íntegramente con las pautas de accesibilidad. Trabajamos progresivamente en su remediación y ofrecemos versiones alternativas bajo solicitud.</p>
+      <h2>3. Limitaciones Conocidas</h2>
+      <p>A pesar de nuestros esfuerzos, pueden existir las siguientes limitaciones:</p>
+      <ul>
+        <li>Documentos PDF históricos (estatutos, memorias) que no cumplen íntegramente con las pautas de accesibilidad. Trabajamos progresivamente en su digitalización y remediación.</li>
+        <li>Contenido generado por terceros (como videos incrustados o mapas) que pueden no ser completamente accesibles.</li>
+      </ul>
+      <p>Si necesitas una versión alternativa de algún documento, no dudes en solicitarla a través de nuestros canales de contacto.</p>
 
-      <h2>Contacto y sugerencias</h2>
-      <p>Si encuentras barreras de accesibilidad, escríbenos a <a href="mailto:accesibilidad@corporacionlucila.cl">accesibilidad@corporacionlucila.cl</a>. Nos comprometemos a responder en un plazo máximo de 10 días hábiles.</p>
+      <h2>4. Canales de Contacto y Sugerencias</h2>
+      <p>Si encuentras barreras de accesibilidad o deseas realizar una sugerencia, puedes comunicarte con nosotros a través de los siguientes medios:</p>
+      <ul>
+        <li><strong>Correo electrónico:</strong> <a href="mailto:accesibilidad@asociacioncultural-lucila.cl">accesibilidad@asociacioncultural-lucila.cl</a></li>
+        <li><strong>Correo general:</strong> <a href="mailto:contacto@asociacioncultural-lucila.cl">contacto@asociacioncultural-lucila.cl</a></li>
+        <li><strong>Presencial:</strong> En nuestra sede en Los Andes, Región de Valparaíso (previa coordinación).</li>
+      </ul>
+      <p>Nos comprometemos a responder en un plazo máximo de <strong>10 días hábiles</strong>.</p>
+
+      <h2>5. Procedimiento de Reclamo</h2>
+      <p>Si no estás conforme con la respuesta recibida, puedes presentar un reclamo formal ante el <strong>Servicio Nacional de la Discapacidad (SENADIS)</strong> o a través de la plataforma de atención ciudadana del Estado de Chile, adjuntando los antecedentes de tu solicitud.</p>
+      <p>Asimismo, puedes solicitar una revisión técnica de accesibilidad enviando un correo a <a href="mailto:accesibilidad@asociacioncultural-lucila.cl">accesibilidad@asociacioncultural-lucila.cl</a> con el asunto "Revisión de accesibilidad".</p>
+
     </div>
   </main>
 
-  <footer class="footer"><div class="container"><div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Corporación Cultural Lucila.</p></div></div></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p><i class="far fa-copyright"></i> 2026 Asociación Cultural de Músicos y Artistas Lucila. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+  
   <script src="../assets/js/cookies.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
 </body>

@@ -3,53 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Transparencia · Corporación Cultural Lucila</title>
-  <link rel="canonical" href="https://corporacionlucila.cl/pages/transparencia.html" />
+  <title>Transparencia · Asociación Cultural Lucila</title>
+  <meta name="description" content="Portal de transparencia de la Asociación Cultural de Músicos y Artistas Lucila. Información institucional, financiera y de gobernanza." />
+  <link rel="canonical" href="https://asociacioncultural-lucila.cl/pages/transparencia.html" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <style>
     .legal-page { padding: 120px 0 60px; }
-    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; }
-    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--rojo-corporativo); }
-    .legal-page p, .legal-page li { font-size: 0.9rem; line-height: 1.7; color: var(--gris-texto); margin-bottom: 0.8rem; }
-    .legal-page ul { list-style: disc; padding-left: 1.4rem; }
-    .legal-page a { color: var(--rojo-corporativo); text-decoration: underline; }
+    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; color: var(--ink); }
+    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--red); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .legal-page p, .legal-page li { font-size: 0.95rem; line-height: 1.8; color: #333; margin-bottom: 0.8rem; }
+    .legal-page ul { list-style: disc; padding-left: 1.4rem; margin-bottom: 1.5rem; }
+    .legal-page a { color: var(--red); text-decoration: underline; font-weight: 500; }
+    .legal-page .meta { font-size: 0.85rem; color: #666; margin-bottom: 2rem; font-style: italic; }
+    .legal-page .highlight-box { background: var(--paper); padding: 1.5rem; border-left: 4px solid var(--red); margin: 1.5rem 0; border-radius: 4px; }
+    
+    /* Estilos para el botón de volver (Extraídos del diseño de tu imagen) */
+    .btn-back-custom {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+    .btn-back-custom:hover {
+      background-color: var(--red);
+      color: var(--paper);
+      gap: 15px;
+    }
+    
+    .navbar__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
-  <header class="navbar"><div class="navbar__inner container"><a href="../index.html" class="navbar__logo"><img src="../assets/img/logo.svg" alt="Corporación Cultural Lucila" height="34" /></a></div></header>
+  <!-- NAVBAR (Con botón de volver a la izquierda) -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      
+      <!-- Botón de volver al inicio -->
+      <a href="../index.html" class="btn-back-custom"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+      
+      <!-- Logo -->
+      <a href="../index.html" class="navbar__logo" aria-label="Asociación Cultural de Músicos y Artistas Lucila — Inicio">
+        <img
+          src="../assets/img/logo-lucila-r.svg"
+          alt="Asociación Cultural de Músicos y Artistas Lucila"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+      </a>
+      
+    </div>
+  </header>
 
   <main class="legal-page">
-    <div class="container">
+    <div class="container" style="max-width: 850px; margin: 0 auto;">
+      
       <h1>Portal de Transparencia</h1>
-      <p>En cumplimiento del principio de transparencia y las buenas prácticas de gobernanza de organizaciones sin fines de lucro, publicamos la siguiente información institucional.</p>
+      <p class="meta">Última actualización: Octubre 2026 · Versión 1.0</p>
 
-      <h2>1. Estatutos</h2>
-      <p>Los estatutos vigentes se encuentran depositados ante el Registro Civil e Identificación de Chile, conforme a la Ley N° 20.500. Copia disponible a solicitud de socios y autoridades.</p>
+      <div class="highlight-box">
+        <p style="margin: 0;">En cumplimiento del principio de transparencia, las buenas prácticas de gobernanza y la normativa vigente para organizaciones sin fines de lucro, la <strong>Asociación Cultural de Músicos y Artistas Lucila</strong> publica la siguiente información institucional para conocimiento de sus socios, la comunidad y los organismos fiscalizadores.</p>
+      </div>
 
-      <h2>2. Directorio vigente</h2>
+      <h2>1. Estatutos y Personalidad Jurídica</h2>
+      <p>Los estatutos vigentes de la Asociación se encuentran depositados ante el <strong>Registro Civil e Identificación de Chile</strong>, conforme a lo dispuesto en la <strong>Ley N° 20.500</strong> sobre Asociaciones y Participación Ciudadana en la Gestión Pública. Copia de los estatutos está disponible para socios y autoridades que la soliciten formalmente.</p>
+      <p>La Asociación se rige por el Título XXXIII del Libro Primero del Código Civil y por la Ley N° 20.500, y no persigue fines de lucro.</p>
+
+      <h2>2. Directorio Vigente</h2>
+      <p>El directorio fue elegido conforme a los estatutos y permanece en funciones por el período establecido en los mismos. Su composición actual es la siguiente:</p>
       <ul>
-        <li><strong>Presidencia:</strong> Dirección Ejecutiva</li>
-        <li><strong>Secretaría:</strong> Gestión Documental</li>
-        <li><strong>Tesorería:</strong> Finanzas y Control</li>
-        <li><strong>Comisión Técnica:</strong> Área Artística</li>
+        <li><strong>Presidencia:</strong> Marcelo Jorge Armando Fernández Campos — Coordinación general y representación legal.</li>
+        <li><strong>Vicepresidencia:</strong> Carlos Alberto Benítez Ortega — Evaluación de proyectos y programas formativos.</li>
+        <li><strong>Secretaría:</strong> Davis Jaime Bahamonde Olguín — Administración de actas, registros de socios y correspondencia.</li>
+        <li><strong>Tesorería:</strong> José Miguel Gálvez Guerrero — Gestión presupuestaria y transparencia financiera.</li>
       </ul>
 
-      <h2>3. Memorias anuales</h2>
-      <p>La Corporación publica anualmente su memoria de actividades, con detalle de proyectos ejecutados, beneficiarios y balance financiero auditado.</p>
+      <h2>3. Memorias y Rendición de Cuentas</h2>
+      <p>La Asociación publica anualmente una <strong>Memoria de Actividades</strong> que detalla los proyectos ejecutados, los beneficiarios directos e indirectos, y un balance financiero. Este documento se encuentra disponible para consulta de socios y de la comunidad.</p>
+      <p>En caso de administrar fondos públicos (provenientes de FONDART, FNDR, convenios municipales u otros), la Asociación cumple con las obligaciones de rendición establecidas en la <strong>Ley N° 19.862</strong> y utiliza el <strong>Sistema de Rendición Electrónica de Cuentas (SISREC)</strong> de la Contraloría General de la República [citation:6].</p>
 
       <h2>4. Financiamiento</h2>
-      <p>Los recursos provienen de: aportes de socios, postulaciones a fondos concursables públicos (FONDART, FNDR), convenios con municipios, donaciones de instrumentos y contraprestaciones por servicios de formación.</p>
+      <p>Los recursos de la Asociación provienen de las siguientes fuentes:</p>
+      <ul>
+        <li><strong>Aportes de socios:</strong> Cuotas periódicas establecidas en estatutos.</li>
+        <li><strong>Fondos concursables públicos:</strong> Postulaciones a FONDART, FNDR y otros programas estatales.</li>
+        <li><strong>Convenios con municipios:</strong> Colaboración para actividades culturales locales.</li>
+        <li><strong>Donaciones:</strong> De instrumentos musicales, equipamiento y aportes voluntarios.</li>
+        <li><strong>Contraprestaciones por servicios:</strong> Talleres de formación y uso de espacios (sin fines de lucro).</li>
+      </ul>
 
-      <h2>5. Contacto institucional</h2>
-      <p>Para solicitar información detallada: <a href="mailto:transparencia@corporacionlucila.cl">transparencia@corporacionlucila.cl</a>.</p>
+      <h2>5. Registro de Personas Jurídicas Receptoras de Fondos Públicos</h2>
+      <p>Cuando la Asociación recibe transferencias de fondos públicos, cumple con la obligación de inscribirse en el <strong>Registro de Personas Jurídicas Receptoras de Fondos Públicos</strong> a cargo de la Tesorería General de la República (TGR), conforme a la Ley N° 19.862 y su Reglamento [citation:5][citation:10].</p>
+
+      <h2>6. Proyectos de Ley en Tramitación</h2>
+      <p>La Asociación se mantiene atenta a los proyectos de ley que buscan fortalecer la transparencia de las organizaciones sin fines de lucro que reciben fondos públicos (Boletines N° 16063-06 y N° 16049-06), los cuales podrían establecer nuevas obligaciones de transparencia activa y rendición de cuentas ante la Contraloría General de la República [citation:1].</p>
+
+      <h2>7. Canal de Solicitudes de Información</h2>
+      <p>Para solicitar información detallada sobre la gestión institucional, financiera o de proyectos, puedes escribir a:</p>
+      <ul>
+        <li><strong>Correo de transparencia:</strong> <a href="mailto:transparencia@asociacioncultural-lucila.cl">transparencia@asociacioncultural-lucila.cl</a></li>
+        <li><strong>Correo de contacto general:</strong> <a href="mailto:contacto@asociacioncultural-lucila.cl">contacto@asociacioncultural-lucila.cl</a></li>
+      </ul>
+      <p>Nos comprometemos a responder las solicitudes en un plazo máximo de <strong>20 días hábiles</strong>, conforme a los principios de celeridad y transparencia.</p>
+
     </div>
   </main>
 
-  <footer class="footer"><div class="container"><div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Corporación Cultural Lucila.</p></div></div></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p><i class="far fa-copyright" aria-hidden="true"></i> 2026 Asociación Cultural de Músicos y Artistas Lucila · Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="../assets/js/cookies.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
 </body>

@@ -3,78 +3,142 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Privacidad · Corporación Cultural Lucila</title>
-  <meta name="description" content="Política de privacidad y tratamiento de datos personales de la Corporación Cultural Lucila (Ley 19.628, Chile)." />
-  <link rel="canonical" href="https://corporacionlucila.cl/pages/privacidad.html" />
+  <title>Política de Privacidad · Asociación Cultural Lucila</title>
+  <meta name="description" content="Política de privacidad y tratamiento de datos personales de la Asociación Cultural de Músicos y Artistas Lucila (Ley 21.719, Chile)." />
+  <link rel="canonical" href="https://asociacioncultural-lucila.cl/pages/privacidad.html" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <style>
     .legal-page { padding: 120px 0 60px; }
-    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; }
-    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--rojo-corporativo); }
-    .legal-page p, .legal-page li { font-size: 0.9rem; line-height: 1.7; color: var(--gris-texto); margin-bottom: 0.8rem; }
-    .legal-page ul { list-style: disc; padding-left: 1.4rem; }
-    .legal-page a { color: var(--rojo-corporativo); text-decoration: underline; text-underline-offset: 2px; }
-    .legal-page .meta { font-size: 0.78rem; color: #888; margin-bottom: 2rem; }
+    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; color: var(--ink); }
+    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--red); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .legal-page p, .legal-page li { font-size: 0.95rem; line-height: 1.8; color: #333; margin-bottom: 0.8rem; }
+    .legal-page ul { list-style: disc; padding-left: 1.4rem; margin-bottom: 1.5rem; }
+    .legal-page a { color: var(--red); text-decoration: underline; font-weight: 500; }
+    .legal-page .meta { font-size: 0.85rem; color: #666; margin-bottom: 2rem; font-style: italic; }
+    .legal-page .highlight-box { background: var(--paper); padding: 1.5rem; border-left: 4px solid var(--red); margin: 1.5rem 0; border-radius: 4px; }
+    
+    /* Estilos para el botón de volver (Extraídos del diseño de tu imagen) */
+    .btn-back-custom {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+    .btn-back-custom:hover {
+      background-color: var(--red);
+      color: var(--paper);
+      gap: 15px;
+    }
+    
+    .navbar__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
-  <header class="navbar">
+  <!-- NAVBAR (Con botón de volver a la izquierda) -->
+  <header class="navbar" id="navbar">
     <div class="navbar__inner container">
-      <a href="../index.html" class="navbar__logo"><img src="../assets/img/logo.svg" alt="Corporación Cultural Lucila" height="34" /></a>
-      <nav><ul class="nav-links"><li><a href="../index.html">← Volver al inicio</a></li></ul></nav>
+      
+      <!-- Botón de volver al inicio -->
+      <a href="../index.html" class="btn-back-custom"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+      
+      <!-- Logo -->
+      <a href="../index.html" class="navbar__logo" aria-label="Asociación Cultural de Músicos y Artistas Lucila — Inicio">
+        <img
+          src="../assets/img/logo-lucila-r.svg"
+          alt="Asociación Cultural de Músicos y Artistas Lucila"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+      </a>
+      
     </div>
   </header>
 
   <main class="legal-page">
-    <div class="container">
+    <div class="container" style="max-width: 850px; margin: 0 auto;">
+      
       <h1>Política de Privacidad</h1>
-      <p class="meta">Última actualización: enero 2026 · Ley N° 19.628 (Chile)</p>
+      <p class="meta">Última actualización: Octubre 2026 · Versión 2.0 · Preparada para la Ley N° 21.719</p>
 
-      <h2>1. Responsable del tratamiento</h2>
-      <p>La <strong>Corporación Cultural Lucila</strong>, RUT en trámite, con domicilio en Los Andes, Región de Valparaíso, Chile, es responsable del tratamiento de los datos personales que recopila a través de este sitio web.</p>
+      <div class="highlight-box">
+        <p style="margin: 0;">La <strong>Asociación Cultural de Músicos y Artistas Lucila</strong>, RUT en trámite, con domicilio en Los Andes, Región de Valparaíso, Chile, es la <strong>responsable del tratamiento</strong> de los datos personales que recopila a través de este sitio web, en conformidad con la <strong>Ley N° 19.628</strong> y la próxima entrada en vigencia de la <strong>Ley N° 21.719</strong> (diciembre de 2026).</p>
+      </div>
 
-      <h2>2. Datos que recopilamos</h2>
+      <h2>1. Marco Normativo Aplicable</h2>
+      <p>El tratamiento de datos personales se rige por la <strong>Ley N° 19.628</strong> sobre Protección de la Vida Privada y, a partir del 1 de diciembre de 2026, por la <strong>Ley N° 21.719</strong> que crea la Agencia de Protección de Datos Personales (APDP) y establece un régimen sancionatorio de hasta <strong>20.000 UTM</strong> para las infracciones gravísimas [citation:1][citation:15].</p>
+
+      <h2>2. Datos que Recopilamos y su Origen</h2>
       <ul>
-        <li><strong>Datos de contacto:</strong> nombre, correo electrónico, mensaje enviado mediante formularios.</li>
-        <li><strong>Datos de navegación:</strong> dirección IP anonimizada, tipo de navegador, páginas visitadas (solo con consentimiento).</li>
-        <li><strong>Archivos cargados:</strong> afiches o flyers enviados por socios (JPG, PNG, WebP — máx. 5 MB).</li>
+        <li><strong>Datos de contacto:</strong> Nombre completo, correo electrónico y mensaje, proporcionados voluntariamente a través del formulario de contacto.</li>
+        <li><strong>Datos de navegación:</strong> Dirección IP anonimizada, tipo de navegador, páginas visitadas y duración de la sesión (solo con consentimiento explícito).</li>
+        <li><strong>Archivos cargados:</strong> Afiches o flyers (JPG, PNG, WebP) enviados por socios para la cartelera cultural.</li>
+        <li><strong>Datos de artistas:</strong> Nombre artístico, especialidad, redes sociales y fotografía, proporcionados al momento de solicitar publicación.</li>
       </ul>
 
-      <h2>3. Finalidad del tratamiento</h2>
+      <h2>3. Finalidad y Base de Licitud</h2>
+      <p>El tratamiento se fundamenta en el <strong>consentimiento libre, específico e informado</strong> del titular (Art. 13 Ley 21.719) y en el <strong>interés legítimo</strong> de la Asociación para el cumplimiento de sus fines culturales sin fines de lucro [citation:2]. Las finalidades son:</p>
       <ul>
-        <li>Responder consultas y postulaciones recibidas.</li>
-        <li>Gestionar la relación con socios y artistas de la Corporación.</li>
-        <li>Difundir actividades culturales y convocatorias.</li>
-        <li>Elaborar estadísticas anónimas de uso del sitio.</li>
+        <li>Gestionar consultas, postulaciones y solicitudes de publicación.</li>
+        <li>Difundir actividades culturales, convocatorias y eventos.</li>
+        <li>Elaborar estadísticas anónimas para mejorar la experiencia del sitio.</li>
+        <li>Cumplir con obligaciones legales de transparencia y rendición de cuentas.</li>
       </ul>
 
-      <h2>4. Base legal</h2>
-      <p>El tratamiento se sustenta en el consentimiento libre, específico e informado del titular, y en el interés legítimo de la Corporación para el desarrollo de sus fines culturales sin fines de lucro.</p>
+      <h2>4. Conservación de los Datos</h2>
+      <p>Los datos se conservarán mientras exista una relación vigente con el titular y hasta <strong>5 años</strong> después, o hasta que se solicite su eliminación, salvo que una obligación legal exija su conservación por un plazo mayor. Los datos de navegación anonimizados se eliminan automáticamente a los <strong>14 meses</strong>.</p>
 
-      <h2>5. Conservación</h2>
-      <p>Los datos se conservarán mientras exista una relación vigente con el titular y hasta 5 años después, o hasta que se solicite su eliminación, salvo obligación legal en contrario.</p>
+      <h2>5. Derechos del Titular (ARCO + Nuevos Derechos)</h2>
+      <p>Puedes ejercer los siguientes derechos escribiendo a <a href="mailto:contacto@asociacioncultural-lucila.cl">contacto@asociacioncultural-lucila.cl</a>:</p>
+      <ul>
+        <li><strong>Acceso:</strong> Conocer qué datos tenemos sobre ti y con qué finalidad.</li>
+        <li><strong>Rectificación:</strong> Modificar datos inexactos o incompletos.</li>
+        <li><strong>Cancelación/Supresión:</strong> Eliminar tus datos cuando ya no sean necesarios.</li>
+        <li><strong>Oposición:</strong> Oponerte al tratamiento para fines de marketing o encuestas.</li>
+        <li><strong>Portabilidad:</strong> Recibir tus datos en un formato estructurado y de uso común (nuevo derecho Ley 21.719).</li>
+        <li><strong>Oposición al tratamiento automatizado:</strong> Solicitar intervención humana en decisiones automatizadas.</li>
+      </ul>
+      <p><strong>Plazo de respuesta:</strong> 30 días corridos desde la recepción de la solicitud, prorrogables por otros 30 días en casos complejos, conforme a la nueva normativa [citation:10].</p>
 
-      <h2>6. Derechos del titular (ARCO)</h2>
-      <p>Puedes ejercer tus derechos de <strong>Acceso, Rectificación, Cancelación y Oposición</strong> escribiendo a <a href="mailto:contacto@corporacionlucila.cl">contacto@corporacionlucila.cl</a>. Responderemos en un plazo máximo de 15 días hábiles.</p>
+      <h2>6. Deber de Confidencialidad</h2>
+      <p>La Asociación mantiene un deber de secreto sobre los datos personales de los titulares, el cual subsiste incluso después de terminada la relación con el titular. Este deber no obsta a las comunicaciones que deban realizarse por mandato legal o a solicitud del propio titular [citation:2].</p>
 
-      <h2>7. Seguridad</h2>
-      <p>Aplicamos medidas técnicas y organizativas razonables para proteger tus datos: cifrado HTTPS/TLS, control de acceso, políticas internas de confidencialidad y copias de respaldo cifradas.</p>
+      <h2>7. Seguridad de los Datos</h2>
+      <p>Aplicamos medidas técnicas y organizativas razonables para proteger la información: cifrado HTTPS/TLS en todas las comunicaciones, control de acceso restringido a los datos, políticas internas de confidencialidad, copias de respaldo cifradas y revisión periódica de vulnerabilidades.</p>
 
-      <h2>8. Cesión a terceros</h2>
-      <p>No cedemos datos personales a terceros, salvo obligación legal. Los servicios de análisis y hosting operan bajo contratos de encargado de tratamiento con cláusulas de confidencialidad.</p>
+      <h2>8. Comunicación a Terceros</h2>
+      <p>No cedemos datos personales a terceros, salvo obligación legal. Los proveedores de servicios de hosting (Cloudflare) y análisis (Google Analytics) operan bajo contratos de encargado de tratamiento con cláusulas de confidencialidad y no utilizan los datos para fines propios.</p>
 
-      <h2>9. Cambios a esta política</h2>
-      <p>Cualquier modificación será publicada en esta misma página indicando la fecha de actualización.</p>
+      <h2>9. Autoridad de Control y Reclamaciones</h2>
+      <p>Si consideras que el tratamiento de tus datos no se ajusta a la normativa, puedes presentar una reclamación ante la <strong>Agencia de Protección de Datos Personales (APDP)</strong> una vez que entre en funcionamiento (diciembre 2026). Mientras tanto, puedes acudir al <strong>Consejo para la Transparencia</strong> para ejercer los derechos ARCO conforme a la Ley 19.628 vigente.</p>
+
+      <h2>10. Actualizaciones de esta Política</h2>
+      <p>Cualquier modificación será publicada en esta misma página, indicando la fecha de actualización y la versión correspondiente. La versión vigente es la 2.0 (Octubre 2026), preparada para la entrada en vigencia de la Ley 21.719.</p>
+
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Corporación Cultural Lucila · Todos los derechos reservados.</p></div>
+      <div class="footer-bottom">
+        <p><i class="far fa-copyright" aria-hidden="true"></i> 2026 Asociación Cultural de Músicos y Artistas Lucila · Todos los derechos reservados.</p>
+      </div>
     </div>
   </footer>
 

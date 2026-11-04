@@ -3,44 +3,84 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Política de Cookies · Corporación Cultural Lucila</title>
-  <meta name="description" content="Política de cookies de la Corporación Cultural Lucila: tipos, finalidad y gestión del consentimiento." />
-  <link rel="canonical" href="https://corporacionlucila.cl/pages/cookies.html" />
+  <title>Política de Cookies · Asociación Cultural Lucila</title>
+  <meta name="description" content="Política de cookies de la Asociación Cultural de Músicos y Artistas Lucila: tipos, finalidad y gestión del consentimiento." />
+  <link rel="canonical" href="https://asociacioncultural-lucila.cl/pages/cookies.html" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <style>
     .legal-page { padding: 120px 0 60px; }
-    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; }
-    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--rojo-corporativo); }
-    .legal-page h3 { font-size: 1.05rem; margin: 1.5rem 0 0.4rem; }
-    .legal-page p, .legal-page li { font-size: 0.9rem; line-height: 1.7; color: var(--gris-texto); margin-bottom: 0.8rem; }
-    .legal-page ul { list-style: disc; padding-left: 1.4rem; }
-    .legal-page table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.85rem; }
-    .legal-page th, .legal-page td { border: 1px solid rgba(226,6,19,0.15); padding: 10px; text-align: left; }
-    .legal-page th { background: rgba(226,6,19,0.05); color: var(--rojo-corporativo); }
-    .legal-page a { color: var(--rojo-corporativo); text-decoration: underline; text-underline-offset: 2px; }
-    .legal-page .meta { font-size: 0.78rem; color: #888; margin-bottom: 2rem; }
-    .legal-page .back { display: inline-block; margin-bottom: 2rem; font-weight: 600; }
+    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; color: var(--ink); }
+    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--red); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .legal-page h3 { font-size: 1.05rem; margin: 1.5rem 0 0.4rem; color: var(--ink); }
+    .legal-page p, .legal-page li { font-size: 0.95rem; line-height: 1.8; color: #333; margin-bottom: 0.8rem; }
+    .legal-page ul { list-style: disc; padding-left: 1.4rem; margin-bottom: 1.5rem; }
+    .legal-page table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.9rem; }
+    .legal-page th, .legal-page td { border: 1px solid rgba(122, 46, 30, 0.2); padding: 12px; text-align: left; }
+    .legal-page th { background: var(--paper); color: var(--red); font-weight: 600; }
+    .legal-page a { color: var(--red); text-decoration: underline; font-weight: 500; }
+    .legal-page .meta { font-size: 0.85rem; color: #666; margin-bottom: 2rem; font-style: italic; }
+    
+    /* Estilos para el botón de volver (Extraídos del diseño de tu imagen) */
+    .btn-back-custom {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+    .btn-back-custom:hover {
+      background-color: var(--red);
+      color: var(--paper);
+      gap: 15px;
+    }
+    
+    .navbar__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
-  <header class="navbar">
+  <!-- NAVBAR (Con botón de volver a la izquierda) -->
+  <header class="navbar" id="navbar">
     <div class="navbar__inner container">
-      <a href="../index.html" class="navbar__logo"><img src="../assets/img/logo.svg" alt="Corporación Cultural Lucila" height="34" /></a>
-      <nav><ul class="nav-links"><li><a href="../index.html">← Volver al inicio</a></li></ul></nav>
+      
+      <!-- Botón de volver al inicio -->
+      <a href="../index.html" class="btn-back-custom"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+      
+      <!-- Logo -->
+      <a href="../index.html" class="navbar__logo" aria-label="Asociación Cultural de Músicos y Artistas Lucila — Inicio">
+        <img
+          src="../assets/img/logo-lucila-r.svg"
+          alt="Asociación Cultural de Músicos y Artistas Lucila"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+      </a>
+      
     </div>
   </header>
 
   <main class="legal-page">
-    <div class="container">
-      <a href="../index.html" class="back">← Volver al inicio</a>
+    <div class="container" style="max-width: 850px; margin: 0 auto;">
+      
       <h1>Política de Cookies</h1>
-      <p class="meta">Última actualización: enero 2026 · Versión 1.0</p>
+      <p class="meta">Última actualización: Octubre 2026 · Versión 1.1</p>
 
-      <p>La <strong>Corporación Cultural Lucila</strong> (en adelante, "la Corporación") utiliza cookies y tecnologías similares en el sitio <a href="https://corporacionlucila.cl">corporacionlucila.cl</a> con la finalidad de garantizar el correcto funcionamiento del sitio, mejorar tu experiencia y, cuando lo autorices, analizar el uso que haces de nuestros servicios.</p>
+      <p>La <strong>Asociación Cultural de Músicos y Artistas Lucila</strong> (en adelante, "la Asociación") utiliza cookies y tecnologías similares en el sitio <a href="https://asociacionlucila.cl">asociacionlucila.cl</a> con la finalidad de garantizar el correcto funcionamiento del sitio, mejorar tu experiencia y, cuando lo autorices, analizar el uso que haces de nuestros servicios.</p>
 
       <h2>1. ¿Qué son las cookies?</h2>
       <p>Las cookies son pequeños archivos de texto que se almacenan en tu navegador cuando visitas un sitio web. Permiten recordar tus preferencias, mantener sesiones activas y obtener información estadística sobre la navegación.</p>
@@ -76,14 +116,15 @@
       <p>La presente política puede ser actualizada para reflejar cambios normativos o técnicos. Publicaremos la nueva versión en esta misma página indicando la fecha de última modificación.</p>
 
       <h2>7. Contacto</h2>
-      <p>Para consultas sobre esta Política de Cookies, escríbenos a <a href="mailto:contacto@corporacionlucila.cl">contacto@corporacionlucila.cl</a>.</p>
+      <p>Para consultas sobre esta Política de Cookies, escríbenos a <a href="mailto:contacto@asociacioncultural-lucila.cl">contacto@asociacioncultural-lucila.cl</a>.</p>
+      
     </div>
   </main>
 
   <footer class="footer">
     <div class="container">
       <div class="footer-bottom">
-        <p><i class="far fa-copyright" aria-hidden="true"></i> 2026 Corporación Cultural Lucila · Todos los derechos reservados.</p>
+        <p><i class="far fa-copyright" aria-hidden="true"></i> 2026 Asociación Cultural de Músicos y Artistas Lucila · Todos los derechos reservados.</p>
       </div>
     </div>
   </footer>

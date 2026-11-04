@@ -3,57 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Términos y Condiciones · Corporación Cultural Lucila</title>
-  <link rel="canonical" href="https://corporacionlucila.cl/pages/terminos.html" />
+  <title>Términos y Condiciones · Asociación Cultural Lucila</title>
+  <meta name="description" content="Términos y condiciones de uso del sitio web de la Asociación Cultural de Músicos y Artistas Lucila." />
+  <link rel="canonical" href="https://asociacioncultural-lucila.cl/pages/terminos.html" />
   <link rel="icon" type="image/svg+xml" href="../assets/img/favicon.svg" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="../assets/css/main.css" />
   <link rel="stylesheet" href="../assets/css/components.css" />
   <link rel="stylesheet" href="../assets/css/responsive.css" />
   <style>
     .legal-page { padding: 120px 0 60px; }
-    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; }
-    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--rojo-corporativo); }
-    .legal-page p, .legal-page li { font-size: 0.9rem; line-height: 1.7; color: var(--gris-texto); margin-bottom: 0.8rem; }
-    .legal-page ul { list-style: disc; padding-left: 1.4rem; }
-    .legal-page a { color: var(--rojo-corporativo); text-decoration: underline; }
+    .legal-page h1 { font-size: 2.2rem; margin-bottom: 0.6rem; color: var(--ink); }
+    .legal-page h2 { font-size: 1.4rem; margin: 2rem 0 0.8rem; color: var(--red); border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
+    .legal-page p, .legal-page li { font-size: 0.95rem; line-height: 1.8; color: #333; margin-bottom: 0.8rem; }
+    .legal-page ul { list-style: disc; padding-left: 1.4rem; margin-bottom: 1.5rem; }
+    .legal-page a { color: var(--red); text-decoration: underline; font-weight: 500; }
+    .legal-page .meta { font-size: 0.85rem; color: #666; margin-bottom: 2rem; font-style: italic; }
+    .legal-page .highlight-box { background: var(--paper); padding: 1.5rem; border-left: 4px solid var(--red); margin: 1.5rem 0; border-radius: 4px; }
+    
+    /* Estilos para el botón de volver (Extraídos del diseño de tu imagen) */
+    .btn-back-custom {
+      font-family: var(--font-sans);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--red);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.3s ease;
+      padding: 8px 16px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+    }
+    .btn-back-custom:hover {
+      background-color: var(--red);
+      color: var(--paper);
+      gap: 15px;
+    }
+    
+    .navbar__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   </style>
 </head>
 <body>
-  <header class="navbar"><div class="navbar__inner container"><a href="../index.html" class="navbar__logo"><img src="../assets/img/logo.svg" alt="Corporación Cultural Lucila" height="34" /></a></div></header>
+  <!-- NAVBAR (Con botón de volver a la izquierda) -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner container">
+      
+      <!-- Botón de volver al inicio -->
+      <a href="../index.html" class="btn-back-custom"><i class="fas fa-arrow-left"></i> Volver al inicio</a>
+      
+      <!-- Logo -->
+      <a href="../index.html" class="navbar__logo" aria-label="Asociación Cultural de Músicos y Artistas Lucila — Inicio">
+        <img
+          src="../assets/img/logo-lucila-r.svg"
+          alt="Asociación Cultural de Músicos y Artistas Lucila"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+        />
+      </a>
+      
+    </div>
+  </header>
 
   <main class="legal-page">
-    <div class="container">
+    <div class="container" style="max-width: 850px; margin: 0 auto;">
+      
       <h1>Términos y Condiciones de Uso</h1>
+      <p class="meta">Última actualización: Octubre 2026 · Versión 1.0</p>
 
-      <h2>1. Aceptación</h2>
-      <p>El acceso y uso de este sitio implica la aceptación plena de estos términos. Si no estás de acuerdo, te pedimos abstenerte de utilizarlo.</p>
+      <div class="highlight-box">
+        <p style="margin: 0;">Bienvenido al sitio web oficial de la <strong>Asociación Cultural de Músicos y Artistas Lucila</strong> (en adelante, "la Asociación"). El acceso y uso de este portal implican la aceptación plena y sin reservas de los presentes Términos y Condiciones. Si no estás de acuerdo con ellos, te solicitamos abstenerte de utilizar el sitio.</p>
+      </div>
 
-      <h2>2. Objeto</h2>
-      <p>Este sitio difunde las actividades culturales, proyectos y convocatorias de la <strong>Corporación Cultural Lucila</strong>.</p>
+      <h2>1. Objeto del Sitio</h2>
+      <p>Este sitio web tiene por objeto difundir las actividades culturales, proyectos, convocatorias y eventos organizados por la Asociación, así como facilitar la comunicación con socios, artistas y la comunidad en general. El sitio no persigue fines de lucro.</p>
 
-      <h2>3. Propiedad intelectual</h2>
-      <p>Textos, logos, imágenes y contenidos son propiedad de la Corporación o de sus respectivos autores. Queda prohibida su reproducción total o parcial sin autorización expresa.</p>
-
-      <h2>4. Contenido de terceros</h2>
-      <p>Los enlaces externos (redes sociales, servicios) se ofrecen como referencia. La Corporación no se responsabiliza por sus contenidos ni políticas.</p>
-
-      <h2>5. Uso aceptable</h2>
+      <h2>2. Marco Legal Aplicable</h2>
+      <p>El uso de este sitio se rige por la legislación chilena vigente, en particular por:</p>
       <ul>
-        <li>No realizar actividades ilícitas o que dañen el sitio.</li>
-        <li>No subir contenido con derechos de terceros sin autorización.</li>
-        <li>No suplantar la identidad de otros usuarios o socios.</li>
+        <li><strong>Ley N° 19.628</strong> y <strong>Ley N° 21.719</strong> (Protección de Datos Personales).</li>
+        <li><strong>Ley N° 17.336</strong> (Propiedad Intelectual).</li>
+        <li><strong>Ley N° 19.496</strong> (Protección de los Derechos de los Consumidores, en lo que sea aplicable a servicios gratuitos).</li>
+        <li><strong>Código Penal</strong> y <strong>Código Civil</strong> en materia de responsabilidad civil y delitos informáticos.</li>
       </ul>
 
-      <h2>6. Modificaciones</h2>
-      <p>La Corporación podrá actualizar estos términos en cualquier momento, publicando la nueva versión en esta misma página.</p>
+      <h2>3. Propiedad Intelectual e Industrial</h2>
+      <p>Todos los contenidos del sitio (textos, logotipos, imágenes, diseño gráfico, código fuente, bases de datos y elementos multimedia) son propiedad exclusiva de la Asociación o de sus respectivos autores, y están protegidos por la Ley 17.336. Queda expresamente prohibida su reproducción, distribución, comunicación pública o transformación, total o parcial, sin autorización previa y por escrito de la Asociación.</p>
 
-      <h2>7. Legislación aplicable</h2>
-      <p>Estos términos se rigen por la legislación chilena. Cualquier controversia será sometida a los tribunales competentes de Los Andes.</p>
+      <h2>4. Contenido Enviado por los Usuarios</h2>
+      <p>Al subir imágenes (afiches, flyers, fotografías de perfil) o datos personales a través de nuestros formularios, el usuario declara y garantiza que:</p>
+      <ul>
+        <li>Es el autor legítimo o titular de los derechos de propiedad intelectual de dicho contenido.</li>
+        <li>El contenido no infringe derechos de terceros (derechos de autor, marcas, honor, intimidad).</li>
+        <li>Otorga a la Asociación una licencia gratuita, no exclusiva y por el tiempo que el contenido permanezca publicado, para exhibirlo en este sitio web y en las redes sociales oficiales de la Asociación.</li>
+      </ul>
+      <p>La Asociación se reserva el derecho de rechazar o eliminar cualquier contenido que considere inapropiado, ofensivo o que infrinja la ley, sin necesidad de justificación previa.</p>
+
+      <h2>5. Uso Aceptable y Conducta del Usuario</h2>
+      <p>El usuario se compromete a utilizar el sitio de conformidad con la ley, la moral y el orden público. Queda prohibido:</p>
+      <ul>
+        <li>Realizar actividades ilícitas, fraudulentas o que dañen la imagen de la Asociación.</li>
+        <li>Introducir virus, malware o cualquier código que pueda dañar el sitio.</li>
+        <li>Suplantar la identidad de otros usuarios, artistas o directivos.</li>
+        <li>Utilizar el formulario de contacto para enviar spam, publicidad no solicitada o mensajes de acoso.</li>
+      </ul>
+
+      <h2>6. Exención de Responsabilidad</h2>
+      <p>La Asociación no se hace responsable por:</p>
+      <ul>
+        <li>La cancelación, modificación o suspensión de los eventos publicados en la cartelera.</li>
+        <li>El contenido de los sitios web de terceros a los que se enlaza desde este portal.</li>
+        <li>Interrupciones técnicas, fallos de servidor o ataques informáticos que puedan afectar temporalmente el acceso al sitio.</li>
+        <li>El uso indebido que terceros puedan hacer de la información publicada en el sitio.</li>
+      </ul>
+
+      <h2>7. Protección de Datos Personales</h2>
+      <p>El tratamiento de los datos personales recopilados a través de este sitio se rige por nuestra <a href="privacidad.html">Política de Privacidad</a>, la cual forma parte integrante de estos Términos y Condiciones.</p>
+
+      <h2>8. Modificaciones</h2>
+      <p>La Asociación se reserva el derecho de actualizar, modificar o reemplazar estos Términos y Condiciones en cualquier momento. Las modificaciones entrarán en vigencia desde su publicación en esta misma página. El uso continuado del sitio después de dichos cambios constituirá la aceptación de los nuevos términos.</p>
+
+      <h2>9. Legislación Aplicable y Jurisdicción</h2>
+      <p>Estos Términos y Condiciones se rigen por las leyes de la República de Chile. Cualquier controversia, disputa o reclamo derivado del uso de este sitio será sometido a la jurisdicción de los <strong>Tribunales Ordinarios de Justicia de la ciudad de Los Andes</strong>, renunciando las partes a cualquier otro fuero que pudiera corresponderles.</p>
+
+      <h2>10. Contacto</h2>
+      <p>Para cualquier consulta relacionada con estos Términos y Condiciones, puedes escribirnos a <a href="mailto:contacto@asociacioncultural-lucila.cl">contacto@asociacioncultural-lucila.cl</a>.</p>
+
     </div>
   </main>
 
-  <footer class="footer"><div class="container"><div class="footer-bottom"><p><i class="far fa-copyright"></i> 2026 Corporación Cultural Lucila.</p></div></div></footer>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p><i class="far fa-copyright" aria-hidden="true"></i> 2026 Asociación Cultural de Músicos y Artistas Lucila · Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
   <script src="../assets/js/cookies.js" defer></script>
   <script src="../assets/js/main.js" defer></script>
 </body>
