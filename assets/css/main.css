@@ -573,7 +573,7 @@ p { text-wrap: pretty; }
   display: flex;
   gap: 2.5rem;
   padding-left: 2.5rem;
-  animation: scrollRibbon 40s linear infinite;
+  animation: scrollRibbon 80s linear infinite;
   flex-shrink: 0;
   min-width: 100%;
 }
